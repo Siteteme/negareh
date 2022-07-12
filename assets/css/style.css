@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #00C1AA;
+    --hover: #049b89;
+    --secondry: #C0A660;
+    --gray: #F9F9F9;
+    --white: #fff;
+    --black: #434343;
+    --font-medium: 'yekanbakh';
+    --transition: all 0.4s ease;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+body {
+    direction: rtl;
+    font-family: var(--font-medium)
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 2px solid #eeeeee47;
+}
+
+
+.header .logo a img {
+    max-width: 48px;
+}
+
+
+.header .navbar nav ul {
+    display: flex;
+}
+
+.header .navbar nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.header .navbar nav ul li::after {
+    content: "";
+    background: var(--primary);
+    width: 0;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: var(--transition);
+}
+
+.header .navbar nav ul li:hover::after {
+    width: 100%;
+}
+
+.header .navbar nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    transition: var(--transition);
+
+}
+
+
+.header .navbar nav ul li:hover a {
+    color: var(--primary)
+}
+
+
+
+
+.header .btn-left-header a {
+    text-decoration: none;
+    background: var(--primary);
+    padding: 10px 15px;
+    color: var(--white);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+
+.header .btn-left-header a:hover {
+    background: var(--hover)
+}
+
+
+
+/*end-header */
+
+.hero {
+    display: flex;
+    height: 450px;
+    margin-top: 20px;
+}
+
+
+.hero-right {
+    width: 50%;
+    /* background: var(--hover); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.hero-right h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+.hero-right p {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+
+.hero-right .hero-right-btn a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.hero-right .hero-right-btn a.hero-right-btn1{
+    background: var(--primary);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-right .hero-right-btn a svg {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    transition: var(--transition);
+
+}
+
+.hero-right .hero-right-btn a:hover svg{
+    transform: translateX(-3px);
+}
+
+.hero-right .hero-right-btn a.hero-right-btn2{
+    border: 1px solid var(--secondry);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--secondry);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-left {
+    width: 50%;
+    background: var(--secondry)
+}
+

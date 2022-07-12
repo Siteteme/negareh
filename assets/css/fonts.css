@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'yekanbakh';
+    src: url('/assets/fonts/medium.ttf') format('truetype'),
+         url('/assets/fonts/medium.woff') format('woff2');
+         font-weight: normal; 
+  }
+
+  @font-face {
+    font-family: 'yekanbakh-bold';
+    src: url('/assets/fonts/yekan-bakh-bold.ttf') format('truetype'),
+         url('/assets/fonts/yekan-bakh-bold.woff2') format('woff2');
+         font-weight: 900;
+  }
+
+  @font-face {
+    font-family: 'yekanbakh-thin';
+    src: url('/assets/fonts/thin.ttf') format('truetype'),
+         url('/assets/fonts/thin.woff2') format('woff2');
+         font-weight: 100;
+  }
+
