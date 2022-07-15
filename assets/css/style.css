@@ -35,6 +35,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #eeeeee47;
 }
 
@@ -82,8 +83,6 @@ body {
 }
 
 
-
-
 .header .btn-left-header a {
     text-decoration: none;
     background: var(--primary);
@@ -99,7 +98,6 @@ body {
 }
 
 
-
 /*end-header */
 
 .hero {
@@ -111,7 +109,6 @@ body {
 
 .hero-right {
     width: 50%;
-    /* background: var(--hover); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,15 +124,16 @@ body {
 .hero-right p {
     width: 350px;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 
-.hero-right .hero-right-btn a{
+.hero-right .hero-right-btn a {
     text-decoration: none;
     margin-left: 15px;
 }
 
-.hero-right .hero-right-btn a.hero-right-btn1{
+.hero-right .hero-right-btn a.hero-right-btn1 {
     background: var(--primary);
     text-decoration: none;
     padding: 10px 15px;
@@ -154,11 +152,11 @@ body {
 
 }
 
-.hero-right .hero-right-btn a:hover svg{
+.hero-right .hero-right-btn a:hover svg {
     transform: translateX(-3px);
 }
 
-.hero-right .hero-right-btn a.hero-right-btn2{
+.hero-right .hero-right-btn a.hero-right-btn2 {
     border: 1px solid var(--secondry);
     text-decoration: none;
     padding: 10px 15px;
@@ -172,6 +170,148 @@ body {
 
 .hero-left {
     width: 50%;
-    background: var(--secondry)
+    background-image: url(/assets/img/banner.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
+/*end-hero*/
+
+
+/*start article*/
+
+#article {
+    background-image: url(/assets/img/background.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+#article .article-title {
+    padding-top: 20px;
+}
+
+.article-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+.article-items .article-item {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 20px !important;
+    /*box-shadow: 0 3px 15px #0000004d;*/
+}
+
+.article-items .article-item img {
+    border-radius: 20px;
+    max-width: 100%;
+    box-shadow: 0 6px 15px rgba(۰, ۰, ۰, 0.14);
+    object-fit: contain;
+}
+
+
+.article-items .article-item h2 {
+    color: var(--primary);
+    font-size: 24px;
+    text-align: right;
+    margin-right: 16px;
+}
+
+.article-items .article-item p {
+    margin-right: 16px;
+    font-size: 12px;
+    text-align: right;
+    padding-bottom: 17px;
+}
+
+
+.btn-more {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.btn-more a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+    margin-top: 15px;
+    background: var(--primary);
+    padding: 8px 15px;
+    border-radius: 50px;
+    color: white;
+
+}
+
+/*slider-article*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    /*background: red;*/
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    width: 49px;
+    height: 49px;
+    color: #000;
+    font-size: 12px !important;
+    box-shadow: 2px 5px 11px #0000000f;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    font-size: 26px;
+}
+
+/*slider-article*/
